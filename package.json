@@ -1,0 +1,16 @@
+{
+  "name": "anglecraft",
+  "version": "1.0.0",
+  "description": "embedded systems project",
+  "scripts": {
+    "start": "concurrently \"parcel ./client/src/index.html\" \"node ./server/index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.1.0"
+  }
+}
