@@ -5,7 +5,7 @@ socketIO.on("connection", (socket) => {
     socket.emit("test", "hello", "from", "server");
 });
 
-const port = 1235;
+const port = process.env.port;
 server.listen(port, function(){
-    console.log(`server running on port 1235`)
+    console.log(`server running on port ${port}`)
 });

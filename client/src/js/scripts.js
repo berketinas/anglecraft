@@ -3,7 +3,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { back, front, left, right, bottom, top } from '../models';
 
-var socket = io('http://localhost:1235', {transports: ['websocket']});
+var socket = io(`anglecraft.herokuapp.com:${process.env.port}`, {transports: ['websocket']});
 
 const scene = new THREE.Scene();
 
